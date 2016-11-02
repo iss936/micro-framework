@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Mon Blog{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+        {% endblock stylesheets %}
+
+        <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    </head>
+    <body>
+        <div class="container">
+            {% block body %}
+	           Bonjour
+            {% endblock %}
+        </div>
+
+
+    </body>
+</html>

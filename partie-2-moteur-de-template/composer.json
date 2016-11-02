@@ -1,0 +1,13 @@
+{
+    "name": "issa/micro-framework",
+    "description": "tuto micro framework php",
+    "authors": [
+        {
+            "name": "Issa Soumare",
+            "email": "isoummare@atixnet.fr"
+        }
+    ],
+    "require": {
+        "twig/twig": "^1.27"
+    }
+}
