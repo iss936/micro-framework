@@ -1,0 +1,8 @@
+# On vérifie que le module module de réecriture d’url est activé
+<IfModule mod_rewrite.c> 
+RewriteEngine On
+# On vérifie que la reqûete n’est pas pour un fichier existant
+RewriteCond %{REQUEST_FILENAME} !-f 
+# On réécrit l’url à partir du fichier index.php
+RewriteRule . index.php [L] 
+</IfModule>
