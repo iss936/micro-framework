@@ -55,7 +55,7 @@ class Route {
     public function executeControllerAction(){
         if(is_string($this->controllerAction)){
             $params = explode(':', $this->controllerAction); // on récupère un tableau indice 0 = controller indice 1 = action
-            $controller = "Esgi\\Controller\\" . $params[0] . "Controller";
+            $controller = "Controller\\" . $params[0] . "Controller";
             $controller = new $controller($this->request, $this->router, $this->twig);
             return call_user_func_array([$controller, $params[1]], $this->matches);
         } else {
