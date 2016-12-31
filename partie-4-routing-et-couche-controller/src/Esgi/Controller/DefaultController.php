@@ -1,6 +1,6 @@
 <?php
 
-namespace Esgi\Controller;
+namespace Controller;
 
 use App\core\controller\BaseController;
 use Symfony\Component\HttpFoundation\Request;
