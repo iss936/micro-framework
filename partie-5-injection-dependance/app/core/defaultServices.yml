@@ -1,0 +1,10 @@
+services:
+    # request:
+    #     class: Symfony\Component\HttpFoundation\Request
+    router:
+        class: App\core\router\Router
+        # arguments: ['request']
+
+    twig:
+        class: App\TwigExtension
+        arguments: ['router']
