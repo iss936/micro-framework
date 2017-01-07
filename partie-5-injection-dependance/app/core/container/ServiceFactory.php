@@ -21,8 +21,8 @@ class ServiceFactory
     public function __construct($configFile)
     {
         $this->ymlConfigFile = $configFile;
-        // load list of service from defaultService.yml
-        $this->defaultConfigFile = __DIR__."/../defaultServices.yml";
+        // load list of service from default_service.yml
+        $this->defaultConfigFile = __DIR__."/../default_services.yml";
 
         $this->loadServiceList();
     }
