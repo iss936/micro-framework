@@ -47,7 +47,7 @@ class Container
     }
 
     /**
-     * Gets the instance via lazy initialization (created on first usage)
+     * Gets the instance (created on first usage)
      *
      * @param $id
      *
