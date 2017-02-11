@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/list.css" type="text/css" media="all" />
+<!-- Nous héritons des fichiers css du parent base.html.twig et ajoutons les fichiers css spécifiques à la vue enfant -->
+ {% endblock stylesheets %}
+
+
+{% block body %}
+<h1> Liste des posts </h1>
+
+<div> 
+<a href="{{ path('esgi_contact') }}">Contact</a>
+<a href="{{ path('esgi_edit_article',{'id': 10}) }}">Modification de l'article 10</a>
+{# Nous écrasons le contenu du block body du parent base.html.twig #}
+Bonjour ne s’affiche donc pas 
+
+<br><br>
+Explication de l’échappement :
+
+{% set lastPost = "<b>Salut</b>" %}
+{#  On créer une variable lastPost #}
+
+{{ lastPost }} 
+{# On affiche à l’écran celle-ci sa valeur est échappé #}
+
+{{ lastPost | raw}}
+{# la variable est ici interprété grâce au filtre twig raw #}
+</div>
+
+{% endblock %}

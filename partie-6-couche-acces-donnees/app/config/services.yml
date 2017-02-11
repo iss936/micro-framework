@@ -1,0 +1,4 @@
+services:
+    # nomduservice:
+    #     class: chemin\de\maclass
+    #     arguments: [service1,service2]
